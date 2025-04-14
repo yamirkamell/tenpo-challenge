@@ -38,13 +38,14 @@ const Login = () => {
         USERS.forEach((user: userTypes)  => {
             if (user.username === username && user.pass === password) {
                 dispatch(login({username: username, password: password, accessToken: 'test token'}));
+                localStorage.setItem('isAuth', 'true');
                 navigate("/");
             }
             else {
               setErrorAlert(true);
             }
           });
-    }
+    };
 
     return isAuthenticated ? <Navigate to='/' replace /> : (
         <RootContainer>
