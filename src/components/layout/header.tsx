@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { resources, retuResource } from "../../_data/resources";
 import logo from "../../assets/poke.png"
 import circle from "../../assets/pokeball-line-circle.png"
-import "./Layout.css"
+import "./layout.css"
 import { CiLogout } from "react-icons/ci";
 import { useAppDispatch } from "../../hooks/hooks";
 import { logout } from "../../pages/login/state/authState";
