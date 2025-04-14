@@ -1,4 +1,4 @@
-import { RootContainer, IconContainer, UsernameIcon, PasswordIcon, InputPersonalized, InputPasswordPersonalized } from './styled';
+import { RootContainer, IconContainer, UsernameIcon, PasswordIcon, InputPersonalized, InputPasswordPersonalized, ShowPasswordContainer } from './styled';
 import { useState } from 'react';
 import { HiEye, HiEyeOff } from "react-icons/hi";
 
@@ -23,11 +23,9 @@ return (
                         type={showPassword ? 'text' : 'password'}
                         onChange={event => handleSearch(event.target.value)}
                     />
-                    {   showPassword ? 
-                            <HiEyeOff onClick={handleClickShowPassword}/> 
-                        : 
-                            <HiEye onClick={handleClickShowPassword}/>
-                    }
+                    <ShowPasswordContainer onClick={handleClickShowPassword} >
+                        { showPassword ? <HiEyeOff size={22}/> : <HiEye size={22}/> }
+                    </ShowPasswordContainer>
                 </>
         :
             <InputPersonalized 

@@ -56,12 +56,22 @@ const InputPasswordPersonalized = styled.input`
     padding-inline: 10px;
 `;
 
+const ShowPasswordContainer = styled.div`
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
 export {
     RootContainer,
     IconContainer,
     UsernameIcon,
     PasswordIcon,
     InputPersonalized,
-    InputPasswordPersonalized
+    InputPasswordPersonalized,
+    ShowPasswordContainer
   };
   
