@@ -16,7 +16,7 @@ const RootContainer = styled.div`
 `;
 
 const LoginLabel = styled.span`
-    color: #2A7B9B; 
+    color: #ff3030; 
     font-size: 28px;
 `;
 
@@ -33,7 +33,7 @@ const ButtonLogin = styled.button`
     border-radius: 4px;
     color: #ffffff;
     font-size: 16px;
-    background-color: #2A7B9B;
+    background-color: #ff3030;
     @media (width <= 375px) {
         width: 250px; 
     }
@@ -52,7 +52,7 @@ const TitleUpperCase = styled.span`
 `;
 
 const TitleText = styled.span`
-    background-color: #2A7B9B;
+    background-color: #ff3030;
     color: black;
     width: 30px;
     height: 30px;

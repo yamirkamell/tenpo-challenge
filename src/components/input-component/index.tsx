@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { HiEye, HiEyeOff } from "react-icons/hi";
 import { resources, retuResource } from '../../_data/resources';
 
-const InputComponent = ({icon, placeholderValue, handleSearch}: any) => {
+const InputComponent = ({icon, value, placeholderValue, handleSearch}: any) => {
     const [showPassword, setShowPassword] = useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -20,6 +20,7 @@ return (
         {placeholderValue == retuResource(resources._password_label) ? 
                 <>
                     <InputPasswordPersonalized
+                        defaultValue={value}
                         placeholder={placeholderValue}
                         type={showPassword ? 'text' : 'password'}
                         onChange={event => handleSearch(event.target.value)}
@@ -31,7 +32,7 @@ return (
         :
             <InputPersonalized 
                 placeholder={placeholderValue}
-                defaultValue={''} 
+                defaultValue={value} 
                 onChange={event => handleSearch(event.target.value)}
             />
         }
