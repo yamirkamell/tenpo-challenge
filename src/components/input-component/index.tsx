@@ -1,6 +1,7 @@
 import { RootContainer, IconContainer, UsernameIcon, PasswordIcon, InputPersonalized, InputPasswordPersonalized, ShowPasswordContainer } from './styled';
 import { useState } from 'react';
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import { resources, retuResource } from '../../_data/resources';
 
 const InputComponent = ({icon, placeholderValue, handleSearch}: any) => {
     const [showPassword, setShowPassword] = useState(false);
@@ -10,13 +11,13 @@ return (
     <RootContainer>
         {icon &&
             <IconContainer>
-                {placeholderValue == 'Username' 
+                {placeholderValue == retuResource(resources._user_label) 
                     ? <UsernameIcon />
                     : <PasswordIcon />
                 }
             </IconContainer>
         }
-        {placeholderValue == 'Password' || placeholderValue == 'Confirm Password' ? 
+        {placeholderValue == retuResource(resources._password_label) ? 
                 <>
                     <InputPasswordPersonalized
                         placeholder={placeholderValue}

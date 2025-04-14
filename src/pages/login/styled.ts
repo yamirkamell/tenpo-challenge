@@ -60,7 +60,10 @@ const TitleText = styled.span`
     align-items: center;
     justify-content: center;
     border-radius: 4px; 
-    
+`;
+
+const ErrorText = styled.h5`
+  color: red;  
 `;
 
 export {
@@ -69,6 +72,7 @@ export {
     InputContainer,
     ButtonLogin,
     TitleUpperCase,
-    TitleText
+    TitleText,
+    ErrorText
   };
   
