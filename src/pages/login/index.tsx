@@ -48,26 +48,28 @@ const Login = () => {
     };
 
     return isAuthenticated ? <Navigate to='/' replace /> : (
-        <RootContainer>
-            <TitleUpperCase>
-                <TitleText>
-                    {retuResource(resources.T_label)}
-                </TitleText>
-                {retuResource(resources.Title_label)}
-            </TitleUpperCase>
-            <LoginLabel>
-                {retuResource(resources._login_label)}
-            </LoginLabel>
-            <InputContainer>
-                <InputComponent icon placeholderValue={retuResource(resources._user_label)} handleSearch={setUsername} />
-                <InputComponent icon placeholderValue={retuResource(resources._password_label)} handleSearch={setPassword} />
-            </InputContainer>
-            {errorAlert ? <ErrorText>{retuResource(resources._validate_login_label)}</ErrorText>
-            : null}
-            <ButtonLogin onClick={() => handleLogin()}>
-                {retuResource(resources._login_label)}
-            </ButtonLogin>
-        </RootContainer>
+        <div style={{width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ff3030'}}>
+            <RootContainer>
+                <TitleUpperCase>
+                    <TitleText>
+                        {retuResource(resources.T_label)}
+                    </TitleText>
+                    {retuResource(resources.Title_label)}
+                </TitleUpperCase>
+                <LoginLabel>
+                    {retuResource(resources._login_label)}
+                </LoginLabel>
+                <InputContainer>
+                    <InputComponent icon value={username} placeholderValue={retuResource(resources._user_label)} handleSearch={setUsername} />
+                    <InputComponent icon value={password} placeholderValue={retuResource(resources._password_label)} handleSearch={setPassword} />
+                </InputContainer>
+                {errorAlert ? <ErrorText>{retuResource(resources._validate_login_label)}</ErrorText>
+                : null}
+                <ButtonLogin onClick={() => handleLogin()}>
+                    {retuResource(resources._login_label)}
+                </ButtonLogin>
+            </RootContainer>
+        </div>
     );
 }
 

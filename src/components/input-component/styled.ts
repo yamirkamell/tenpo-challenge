@@ -9,7 +9,7 @@ const RootContainer = styled.div`
     height: 45px; 
     border-radius: 4px;
     background-color: #e8e6e6;
-    color: #2A7B9B;
+    color: #ff3030;
     @media (width <= 375px) {
         width: 250px; 
     }
@@ -18,7 +18,7 @@ const RootContainer = styled.div`
 const IconContainer = styled.div`
     width: 45px;
     height: 45px; 
-    background-color: #2A7B9B; 
+    background-color: #ff3030; 
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -42,7 +42,7 @@ const InputPersonalized = styled.input`
     border: none !important;
     outline: none; 
     background-color: transparent; 
-    color: #2A7B9B; 
+    color: #ff3030; 
     padding-inline: 10px;
 `;
 
@@ -52,7 +52,7 @@ const InputPasswordPersonalized = styled.input`
     border: none !important;
     outline: none; 
     background-color: transparent; 
-    color: #2A7B9B; 
+    color: #ff3030; 
     padding-inline: 10px;
 `;
 

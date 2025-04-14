@@ -1,0 +1,59 @@
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 0% 5%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .pokemon-card {
+    flex: 0 0 23%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; 
+  }
+  
+  .pokemon-image {
+    width: 150px; 
+    height: auto;
+  }
+  
+  .pokemon-name {
+    font-family: "Press Start 2P", system-ui;
+    color: white; 
+  }
+
+  .normal { background-color: #A8A77A !important; }
+  .fighting { background-color: #C22E28 !important; }
+  .flying { background-color: #A98FF3 !important; }
+  .poison { background-color: #A33EA1 !important; }
+  .ground { background-color: #E2BF6A !important; }
+  .rock { background-color: #B6A136 !important; }
+  .bug { background-color: #A6B91A !important; }
+  .ghost { background-color: #735797 !important; }
+  .steel { background-color: #B7B7CE !important; }
+  .fire { background-color: #FBAF24 !important; } 
+  .water { background-color: #6390F0 !important; }
+  .grass { background-color: #7AC74C !important; }
+  .electric { background-color: #F7D02C !important; }
+  .psychic { background-color: #F366B9 !important; }
+  .ice { background-color: #96D9D6 !important; }
+  .dragon { background-color: #6F35FC !important; }
+  .dark { background-color: #705848 !important; }
+  .fairy { background-color: #D685AD !important; }
+  .stellar { background-color: #d6c385 !important; }
+  .unknown { background-color: #000000 !important; }
+
+  @media screen and (max-width: 800px){
+    .pokemon-name{
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 550px){
+    .pokemon-card {
+        flex: 0 0 45%; 
+      }
+  }

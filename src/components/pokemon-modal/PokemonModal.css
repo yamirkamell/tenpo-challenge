@@ -1,0 +1,30 @@
+.pokemon-modal{
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-name-modal{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    align-self: center;
+}
+
+.pokemon-image-modal{
+    width: 220px;
+    align-self: center;
+}
+
+.pokemon-type-modal {
+    font-family: "Play", sans-serif !important; 
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 350px){
+    .pokemon-modal{
+        width: 190px;
+    }
+  }
